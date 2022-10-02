@@ -1,0 +1,46 @@
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis"
+       xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="en-US">
+    <voice name="en-US-JennyNeural"><prosody rate="40%" pitch="0%">
+        <mstts:express-as style="assistant">
+        Opening:
+            Planets orbit stars. The relative positions of the stars to the planets are fixed. 12 Stellar travel is a game application with 4 separate challenges that educate 8-14 years old kids: stars above are constantly changing because of the refraction, solar flare, occlude, and life cycle. When looking up at the sky, stars are twinkling.
+        </mstts:express-as>
+        <mstts:express-as style="cheerful">
+                     Wanna know why? Start the game!
+        </mstts:express-as>
+
+        <mstts:express-as style="cheerful">
+        Game1 (Defence Solar Flare)
+        </mstts:express-as>
+        <mstts:express-as style="chat">
+        Although the stars we see from Earth are only twinkling space is changing rapidly, and stars also have cooling periods and active periods. As an astronaut, watch out for solar flares!
+        </mstts:express-as>
+
+        <mstts:express-as style="cheerful">
+        Game2 (Find the Brightest Stellar)
+        </mstts:express-as>
+        <mstts:express-as style="chat">
+        One of the reasons stars vary in brightness is that when we view Earth, the stars block each other, preventing us from seeing all of them entirely. Now move the stars on the screen with your finger and see how the occlusion affects the brightness of the stars.
+        </mstts:express-as>
+
+        <mstts:express-as style="cheerful">
+        Game3 (Understand the Lifecycle of Stellars)
+        </mstts:express-as>
+        <mstts:express-as style="chat">
+        The star looks like a bright and shining dot from the earth, but there is an amazing growth story behind this twinkling dot. Let us tell you more about stars from a variety of masses to how the star will die. 
+        </mstts:express-as>
+
+        <mstts:express-as style="cheerful">
+        Game4 (Observe Photons)
+        </mstts:express-as>
+        <mstts:express-as style="chat">
+        A refraction will make the stars appear twinkling, and with the rotation of the planet, the light from the stars seen from the earth is twinkling.Put on your spacesuit and your telescope and see how hot and cold air affects the twinkling of the stars.
+        </mstts:express-as>
+
+        <mstts:express-as style="cheerful">
+        Start Your Journey!
+        </mstts:express-as>
+
+        </prosody>
+    </voice>
+</speak>

@@ -6,7 +6,8 @@ import azure.cognitiveservices.speech as speechsdk
 
 # Creates an instance of a speech config with specified subscription key and service region.
 # Replace with your own subscription key and service region (e.g., "westus").
-speech_key, service_region = "YourSubscriptionKey", "eastus"
+speech_key, service_region = "5c44158ea50747dca208ecdf89456775", "eastus"
+# speech_key, service_region = "YourSubscriptionKey", "eastus"
 speech_config = speechsdk.SpeechConfig(
     subscription=speech_key, region=service_region)
 
@@ -19,7 +20,7 @@ speech_synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config)
 # Receives a text from console input.
 print("Type some text that you want to speak...")
 # text = input()
-text = "The stars above are constantly changing, but usually these changes are too slow or too faint for the eye to see. Your challenge is to develop a learning tool to teach people about stellar variability and help them understand how dynamic the night sky really is!"
+text = "That'd be just amazing!"
 
 # Synthesizes the received text to speech.
 # The synthesized speech is expected to be heard on the speaker with this line executed.
@@ -30,11 +31,15 @@ speech_config.set_speech_synthesis_output_format(
 synthesizer = speechsdk.SpeechSynthesizer(
     speech_config=speech_config, audio_config=None)
 
-result = synthesizer.speak_text_async(
-    "The stars above are constantly changing, but usually these changes are too slow or too faint for the eye to see. Your challenge is to develop a learning tool to teach people about stellar variability and help them understand how dynamic the night sky really is!").get()
+ssml_string = open("ssml.xml", "r").read()
+result = synthesizer.speak_ssml_async(ssml_string).get()
+
+# result = synthesizer.speak_text_async(
+#     "The stars above are constantly changing, but usually these changes are too slow or too faint for the eye to see. Your challenge is to develop a learning tool to teach people about stellar variability and help them understand how dynamic the night sky really is!").get()
 stream = speechsdk.AudioDataStream(result)
 # stream.save_to_wav_file("path/to/write/file.wav")
 stream.save_to_wav_file("speech.wav")
+
 
 # Checks result.
 # if result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:

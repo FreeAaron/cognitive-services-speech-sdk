@@ -146,7 +146,7 @@ class LongTextSynthesizer:
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
-    s = LongTextSynthesizer(subscription="YourSubscriptionKey", region="YourServiceRegion")
+    s = LongTextSynthesizer(subscription="5c44158ea50747dca208ecdf89456775", region="eastus")
     with Path('./Gatsby-chapter1.txt').open('r', encoding='utf-8') as r:
         s.synthesize_text(r.read(), output_path=Path('./gatsby'))
     s.synthesize_text(ssml_path=Path('multi-role.xml'), output_path=Path('./multi-role'))
