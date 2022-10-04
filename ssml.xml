@@ -1,6 +1,6 @@
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis"
        xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="en-US">
-    <voice name="en-US-JennyNeural"><prosody rate="40%" pitch="0%">
+    <voice name="en-US-JennyNeural"><prosody rate="100%" pitch="0%">
         <mstts:express-as style="assistant">
         Opening:
             Planets orbit stars. The relative positions of the stars to the planets are fixed. 12 Stellar travel is a game application with 4 separate challenges that educate 8-14 years old kids: stars above are constantly changing because of the refraction, solar flare, occlude, and life cycle. When looking up at the sky, stars are twinkling.
